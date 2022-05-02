@@ -15,7 +15,7 @@ function List(props: ListInterface) {
       {props.list.length > 0 && (
         <AnimatePresence>
           {props.list.map((todo_item: Todo) => (
-            <ListItem key={todo_item.id} item={todo_item} removeItemFromList={props.removeItemFromList} toggleItemDone={props.toggleItemDone} />
+            <ListItem key={todo_item._id} item={todo_item} removeItemFromList={props.removeItemFromList} toggleItemDone={props.toggleItemDone} />
           ))}
         </AnimatePresence>
       )}
