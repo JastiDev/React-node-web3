@@ -8,7 +8,7 @@ const port = 3001;
 app.use(cors({ origin: '*' }));
 app.use(bodyParser.json());
 
-const mongoDBLink = 'mongodb+srv://jastidev:hdUt1a6wRFpBJuti@cluster0.ut2l0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const mongoDBLink = '';
 
 mongoose.connect(mongoDBLink);
 
